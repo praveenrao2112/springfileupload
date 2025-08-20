@@ -5,13 +5,11 @@
 </head>
 <body>
 <h2>Upload File</h2>
-<form method="POST" enctype="multipart/form-data" action="upload">
-    <input type="file" name="file"/>
+<form method="post" action="${pageContext.request.contextPath}/uploadFile" enctype="multipart/form-data">
+
+    <input type="file" name="file" />
     <button type="submit">Upload</button>
 </form>
-
-
-
-<p style="color:green;">${message}</p>
+<p>${message}</p>
 </body>
 </html>
